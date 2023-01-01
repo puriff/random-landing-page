@@ -144,7 +144,7 @@ const DrawerStyled = styled.div`
 
     .close-button {
         margin-top: 5%;
-        color: white;
+        color: #3DE1B8;
     }
     
     .launch-app-drawer {
@@ -155,8 +155,8 @@ const DrawerStyled = styled.div`
         padding-left: 15px;
         padding-right: 15px;
         border-radius: 15px;
-        color: white;
-        border: 1px white solid;
+        color: #3DE1B8;
+        border: 1px #3DE1B8 solid;
         font-size: 16px;
         font-weight: bold;
 
@@ -171,7 +171,7 @@ const DrawerStyled = styled.div`
                 height: 1px;
                 bottom: 0;
                 left: 0;
-                background-color: white;
+                background-color: #3DE1B8;
                 transform: scaleX(0);
                 transition: transform 0.2s ease;
                 }
