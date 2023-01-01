@@ -131,7 +131,6 @@ const Container = styled.div`
         margin: auto;
         margin-top: 5%;
 
-
         .blurred-part {
             height: 30%;
             width: 80%;
@@ -199,50 +198,25 @@ const Container = styled.div`
         }
     }
 
-    .footer {
-        border-top: 1px solid rgba(61,225,184,1);
-        position: relative;
-        width: 100%;
-        height: 30%;
-        background: #161615;
-        overflow-x: hidden;
-        display: flex;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-
-
-        .footer-content {
-            background: blue;
-            width: 90%;
-            height: 80%;
-            display: flex;
-
-            .first-column-footer {
-                height: 100%;
-                width: 33.33%;
-                background: green;
-            }
-
-            .second-column-footer {
-                height: 100%;
-                width: 33.33%;
-                background: white;
-            }
-
-            .third-column-footer {
-                height: 100%;
-                width: 33.33%;
-                background: red;
-            }
-        }
-    }
-
-
-
-
   @media only screen and (max-width: 768px) {
+        .intro-div {
+            margin-bottom: 10%;
+
+            .image-div {
+                position: relative;
+                width: 50%;
+                display: flex;
+                height: 100%;
+                justify-content: right;
+                align-items: center;
     
+                .image-apu {
+                    position: relative;
+                    right: 10%;
+                    height: 60%;
+                }
+            }  
+        }
     }
 
     @media only screen and (max-width: 320px) {
