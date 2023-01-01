@@ -4,6 +4,7 @@ import happy from "./happy.png";
 import CircleIcon from '@mui/icons-material/Circle';
 import logo from './logo.png'
 import abstract from './abstract.png'
+import Footer from "./Footer";
 
 const Container = styled.div`
   position: relative;
@@ -130,16 +131,21 @@ const Container = styled.div`
         margin: auto;
         margin-top: 5%;
 
+
         .blurred-part {
             height: 30%;
             width: 80%;
-            border: 1px solid white;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 15px;
             margin: auto;
             margin-bottom: 10%;
+            background: rgb(61,225,184);
+            background: radial-gradient(circle, transparent 60%, rgba(61,225,184,0.8) 150%, transparent 40%);
+            border-right: 2px solid rgba(61,225,184,1);
+            border-left: 2px solid rgba(61,225,184,1);
+
             
             .text-part{
                 .title-blurred {
@@ -162,9 +168,7 @@ const Container = styled.div`
             .img-blurred {
                 position: relative;
                 height: 60%;
-                right: 2%;
-                
-                
+                right: 2%;               
             }
         }
 
@@ -192,6 +196,45 @@ const Container = styled.div`
             width: 50%;
             bottom: 0;
             right: -10%;
+        }
+    }
+
+    .footer {
+        border-top: 1px solid rgba(61,225,184,1);
+        position: relative;
+        width: 100%;
+        height: 30%;
+        background: #161615;
+        overflow-x: hidden;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+
+
+        .footer-content {
+            background: blue;
+            width: 90%;
+            height: 80%;
+            display: flex;
+
+            .first-column-footer {
+                height: 100%;
+                width: 33.33%;
+                background: green;
+            }
+
+            .second-column-footer {
+                height: 100%;
+                width: 33.33%;
+                background: white;
+            }
+
+            .third-column-footer {
+                height: 100%;
+                width: 33.33%;
+                background: red;
+            }
         }
     }
 
@@ -325,7 +368,8 @@ function openLink(link) {
             <div className="bottom-text">
                 <h1 className="bottom-text-h1"> Come get some <span className="special-text-color-underlined">Lorem Ipsum</span> ! </h1>
             </div>
-        </div>      
+        </div>    
+        <Footer/>
     </Container>
   );
 }

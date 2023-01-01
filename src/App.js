@@ -1,6 +1,7 @@
 import styled, { ThemeProvider } from "styled-components";
 import Header from "./Header";
 import Main from "./Main"
+import Footer from "./Footer"
 
 const Container = styled.div`
   position: relative;
