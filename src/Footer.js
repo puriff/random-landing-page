@@ -99,6 +99,89 @@ const Container = styled.div`
       }
     }
   }
+
+  @media only screen and (max-width: 320px) {
+    border-top: 1px solid rgba(61,225,184,1);
+    position: relative;
+    width: 100%;
+    height: 30%;
+    background: #161615;
+    overflow-x: hidden;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+
+    .column-title {
+      margin-top: 0;
+      color: rgba(61,225,184,1);
+      margin-bottom: 0;
+      padding-bottom: 0;
+      font-size: 14px;
+    }
+
+    .column-text {
+      color: white;
+      width: 80%;
+      font-size: 10px;  
+      margin-top: 0;
+      padding-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .footer-content {
+        width: 90%;
+        height: 80%;
+        display: flex;
+
+        .first-column-footer {
+            height: 100%;
+            width: 33.33%;
+
+            .first-text {
+              margin-bottom: 5%;
+            }
+
+            .image-div {
+              width: 70%;
+              height: 25%;
+              display: flex;
+              align-items: center;
+
+              .image {
+                width: 25%;
+                margin-right: 5%;
+              }
+            }
+        }
+
+        .second-column-footer {
+            height: 100%;
+            width: 33.33%;
+
+            .image-div {
+              width: 70%;
+              height: 25%;
+              display: flex;
+              align-items: center;
+              margin-bottom: 5%;
+
+              .image {
+                width: 25%;
+                margin-right: 5%;
+              }
+            }
+        }
+
+        .third-column-footer {
+            height: 100%;
+            width: 33.33%;
+        }
+    }
+  }
+  }
 `;
 
 function Footer() {

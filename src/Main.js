@@ -24,7 +24,7 @@ const Container = styled.div`
         .text-div {
             position: relative;
             width: 60%;
-            color: white;
+            color: white;  
 
             .title {
                 
@@ -80,12 +80,12 @@ const Container = styled.div`
             width: 50%;
             display: flex;
             height: 100%;
-            justify-content: right;
+            justify-content: left;
             align-items: center;
 
             .image-apu {
                 position: relative;
-                right: 10%;
+                left: 10%;
                 height: 70%;
             }
         }  
@@ -97,6 +97,10 @@ const Container = styled.div`
         width: 90%;
         margin: auto;
         color: white;
+
+        .title {
+            
+        }
 
         .special-text-color {
             color: #3DE1B8;
@@ -207,12 +211,12 @@ const Container = styled.div`
                 width: 50%;
                 display: flex;
                 height: 100%;
-                justify-content: right;
+                justify-content: left;
                 align-items: center;
     
                 .image-apu {
                     position: relative;
-                    right: 10%;
+                    left: 10%;
                     height: 60%;
                 }
             }  
@@ -221,28 +225,28 @@ const Container = styled.div`
 
     @media only screen and (max-width: 320px) {
         display: flex;
+        position: relative;
+        top: 0%;
+        height : fit-content;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: column; 
 
         .intro-div {
             positon: relative;
-            top: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
 
             .text-div {
-                position: absolute;
-                top: 30%;
-                width: 95%;
-                display: block;
-                justify-text: auto;
-                height: fit-content;
+                position: relative;
+                width: 90%;
                 padding-bottom: 5%;
+                height: fit-content;
 
                 .title {
                     font-size: 24px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                 }
 
                 .app-button {
@@ -255,22 +259,94 @@ const Container = styled.div`
             }
 
             .image-div {
-                position: absolute;
-                top: 0;
+                position: relative;
                 width: 95%;
-                height: 30%;
+                height: 40%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                
 
                 .image-apu {
-                    right: 0;
+                    left: 0;
+                    max-height: 150px;
                     height: 100%;
                 }
             }
         }
-        
 
+        .list-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+
+            .title {
+                width: 90%;
+
+                font-size: 24px;
+            }
+
+            .list {
+                
+                .list-item {
+                    margin-bottom: 5px;
+                    font-size: 12px;
+    
+                    .list-item-icon {
+                        background-color:  #3DE1B8;
+                        border-radius: 50%;
+                        -webkit-box-shadow:0px 0px 62px 13px rgba(45,255,196,0.57);
+                        -moz-box-shadow: 0px 0px 62px 13px rgba(45,255,196,0.57);
+                        box-shadow: 0px 0px 10px 2px #3DE1B8;
+                    }
+                }
+            }
+        }
+
+        .bottom-part {
+
+            .blurred-part {
+                .text-part{
+                    width: 70%;
+                    height: fit-content;
+                    padding-bottom: 0;
+                    height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    .title-blurred {
+                        font-size: 20px;   
+                    }
+    
+                    .text-blurred {
+                        font-size: 10px;
+                        width: 70%;
+                    }
+                }
+    
+                .img-blurred {
+                    width: 10%;
+                    right: 5%;               
+                }
+            }
+    
+        .bottom-text {
+            display: block;
+            position: relative;
+            margin: auto;
+            width: 100%;
+            text-align: center;
+
+            .bottom-text-h1 {
+
+                .special-text-color-underlined {
+                }
+            }
+        }
+        }
     }
 `;
 
@@ -283,8 +359,11 @@ function openLink(link) {
   return (
     <Container>
         <div className="intro-div">
+            <div className="image-div">
+                <img src={happy} className="image-apu"></img>
+            </div>
             <div className="text-div">
-                <h1 className="title">What is <span className="special-text-color"> Lorem Ipsum </span>?</h1>
+                <h1 className="title">What is {" "}<span className="special-text-color">Lorem Ipsum</span> ?</h1>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the <span className="underlined-text">industry's standard</span> dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -292,9 +371,6 @@ function openLink(link) {
                  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
                  and more recently with <span className="underlined-text">desktop publishing software</span> like Aldus PageMaker including versions of Lorem Ipsum.
                  <div><Button className="app-button" onClick={() => openLink("https://www.lipsum.com/")}><div className="button-text">Get started</div></Button></div>
-            </div>
-            <div className="image-div">
-                <img src={happy} className="image-apu"></img>
             </div>
         </div>
         <div className="list-div">
@@ -342,7 +418,7 @@ function openLink(link) {
             <div className="bottom-text">
                 <h1 className="bottom-text-h1"> Come get some <span className="special-text-color-underlined">Lorem Ipsum</span> ! </h1>
             </div>
-        </div>    
+        </div>
         <Footer/>
     </Container>
   );
