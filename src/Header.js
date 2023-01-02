@@ -45,7 +45,7 @@ const Container = styled.div`
             height: fit-content;
             border-radius: 15px;
             color: white;
-            font-size: 12px;
+            font-size: 16px;
             
             .button-text {
                 position: relative;
@@ -79,7 +79,7 @@ const Container = styled.div`
             border-radius: 10px;
             color: #161615;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 18px;
             background: #3DE1B8;
 
             .button-text {
@@ -157,7 +157,7 @@ const DrawerStyled = styled.div`
         border-radius: 15px;
         color: #3DE1B8;
         border: 1px #3DE1B8 solid;
-        font-size: 16px;
+        font-size: 24px;
         font-weight: bold;
 
         .button-text {
@@ -186,7 +186,7 @@ const DrawerStyled = styled.div`
             width: 100%;
             height: fit-content;
             color: white;
-            font-size: 16px;
+            font-size: 20px;
             display: flex;
             margin: auto;
             margin-top: 50%;

@@ -25,9 +25,10 @@ const Container = styled.div`
             position: relative;
             width: 60%;
             color: white;  
+            font-size: 22px;
 
             .title {
-                
+                font-size: 50px;
             }
 
             .special-text-color {
@@ -47,6 +48,7 @@ const Container = styled.div`
                 width: fit-content;
                 padding-left: 5%;
                 padding-right: 5%;
+                font-size: 18px;
 
                 :hover {
                     opacity: 0.96
@@ -99,7 +101,7 @@ const Container = styled.div`
         color: white;
 
         .title {
-            
+            font-size: 50px;
         }
 
         .special-text-color {
@@ -115,7 +117,7 @@ const Container = styled.div`
 
             .list-item {
                 margin-bottom: 15px;
-                font-size: 14px;
+                font-size: 18px;
 
                 .list-item-icon {
                     background-color:  #3DE1B8;
@@ -148,23 +150,24 @@ const Container = styled.div`
             background: radial-gradient(circle, transparent 60%, rgba(61,225,184,0.8) 150%, transparent 40%);
             border-right: 2px solid rgba(61,225,184,1);
             border-left: 2px solid rgba(61,225,184,1);
-
             
             .text-part{
                 .title-blurred {
                     color: #3DE1B8;
                     width: fit-content;
                     position: relative;
+                    padding-top: 0;
                     margin-top: 0;
                     margin-bottom: 0;
                     margin-left: 2%;
+                    font-size: 45px;
                 }
 
                 .text-blurred {
                     color: white;
                     margin-left: 2%;
                     width: 60%;
-                    font-size: 14px;
+                    font-size: 18px;
                 }
             }
 
@@ -183,6 +186,7 @@ const Container = styled.div`
             margin: auto;
             justify-content: center;
             align-items: center;
+            font-size: 32px;
 
             .bottom-text-h1 {
                 color: white;
@@ -193,19 +197,20 @@ const Container = styled.div`
                 }
             }
         }
-
-        .bottom-image {
-            position: absolute;
-            width: 50%;
-            bottom: 0;
-            right: -10%;
-        }
     }
 
   @media only screen and (max-width: 768px) {
         .intro-div {
             margin-bottom: 10%;
 
+            .text-div {
+                font-size: 16px;
+    
+                .title {
+                    font-size: 40px;
+                }
+            }
+    
             .image-div {
                 position: relative;
                 width: 50%;
@@ -216,10 +221,41 @@ const Container = styled.div`
     
                 .image-apu {
                     position: relative;
-                    left: 10%;
+                    left: 0%;
                     height: 60%;
                 }
             }  
+        }
+
+        .list-div {
+            font-size: 18px;
+            .title {
+                font-size: 40px;
+            }
+        }
+    
+        .bottom-part {
+            .blurred-part {
+            
+                .text-part{
+                    margin-left: 10%;
+                    .title-blurred {
+                        font-size: 32px;
+                    }
+    
+                    .text-blurred {
+                        font-size: 14px;
+                    }
+                }
+
+                .img-blurred {
+                    margin-right: 10%;
+                }
+            }
+
+            .bottom-text {
+                font-size: 22px;
+            }
         }
     }
 
@@ -339,6 +375,7 @@ const Container = styled.div`
             margin: auto;
             width: 100%;
             text-align: center;
+            font-size: 18px;
 
             .bottom-text-h1 {
 
