@@ -92,11 +92,21 @@ const Container = styled.div`
   @media only screen and (max-width: 768px) {
     height: 45%;
     .footer-content {
+      .second-column-footer {
+
+        .image-div {
+
+          .image {
+            height: 60%;
+            margin-right: 5%;
+          }
+        }
+      }
         .third-column-footer {
           .column-text {
             width: 100%;
           }
-      }
+        }
     }
   }
 

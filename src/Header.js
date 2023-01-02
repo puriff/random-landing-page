@@ -250,13 +250,8 @@ const DrawerStyled = styled.div`
     }
 
     @media only screen and (max-width: 320px) {
-        .theme-button-light-drawer {
-            width: 20%;
-            margin-top: 75%;
-        }
-        .theme-button-dark-drawer {
-            width: 20%;
-            margin-top: 75%;
+        .launch-app-drawer {
+            font-size: 18px;
         }
     }
 `;
